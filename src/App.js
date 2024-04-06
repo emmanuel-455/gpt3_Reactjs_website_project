@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import {Article, CTA, Feature, Navbar, Brand} from "./components/index"
 import './App.css';
+import {Blog, Features, Footer, Header, Possibilty, WhatGPT3} from "./containers/index"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="App">
+        <div className="gradient__bg">
+          <Navbar />
+          <Header />
+        </div>
+        <Brand />
+        <WhatGPT3 />
+        <Features />
+        <Possibilty />
+        <CTA />
+        <Blog />
+        <Footer />
+      </div>
+    
   );
 }
 
