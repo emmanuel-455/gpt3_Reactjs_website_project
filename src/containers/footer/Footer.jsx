@@ -2,6 +2,8 @@ import React from 'react';
 import gpt3logo from "../../containers/logo.svg"
 import './footer.css';
 
+const date = new Date().getFullYear()
+
 const Footer = () => (
   <div className="gpt3__footer section__padding">
     <div className="gpt3__footer-heading">
@@ -39,7 +41,7 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2021 GPT-3. All rights reserved.</p>
+      <p>@{date} GPT-3. All rights reserved.</p>
     </div>
   </div>
 );
